@@ -156,3 +156,5 @@ while True:
         if opcao == "S":
                 print("\nObrigado por utilizar.")
                 quit("*Encerrando*")
+
+#Obrigado <3
