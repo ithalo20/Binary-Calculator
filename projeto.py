@@ -25,12 +25,12 @@ def resto (n1, n2):
     return (bin(resultado)[2:])
 
 
-print("\t\t ** Calculadora de sistema binário ** ")
+print("\t\t ** Calculadora de sistema binário ** \n")
 
 while True:
 
     try:
-        print("\n-- Menu de Opções --\n")
+        print("-- Menu de Opções --\n")
         print("[+] Soma")
         print("[-] Subtração")
         print("[*] Multiplicação")
@@ -46,7 +46,7 @@ while True:
             n1 = input("\nDigite um número: ")
             n2 = input("Digite um número: ")
             if n1.isdigit() and n2.isdigit():
-                print(f"\n** {n1} + {n2} = {soma(n1, n2)} **\n")
+                print(f"\n{n1} + {n2} = {soma(n1, n2)}\n")
             
             else:
                 print("\nInvalido, você digitou letra,caracter ou letra,caracter + número. ")
@@ -66,7 +66,7 @@ while True:
             n2 = input("Digite um número: ")
             
             if n1.isdigit() and n2.isdigit():
-                print(f"\n** {n1} - {n2} = {subtracao(n1, n2)} **\n")
+                print(f"\n{n1} - {n2} = {subtracao(n1, n2)}\n")
             
             else:
                 print("\nInvalido, você digitou letra,caracter ou letra,caracter + número. ")
@@ -86,7 +86,7 @@ while True:
             n2 = input("Digite um número: ")
             
             if n1.isdigit() and n2.isdigit():
-                print(f"\n** {n1} * {n2} = {multiplicacao(n1, n2)} **\n")
+                print(f"\n{n1} * {n2} = {multiplicacao(n1, n2)}\n")
             
             else:
                 print("\nInvalido, você digitou letra,caracter ou letra,caracter + número. ")
@@ -106,7 +106,7 @@ while True:
             n2 = input("Digite um número: ")
             
             if n1.isdigit() and n2.isdigit():
-                print(f"\n** {n1} ÷ {n2} = {divisao(n1, n2)} e o resto da divisão é {resto(n1,n2)} **\n")
+                print(f"\n{n1} / {n2} = {divisao(n1, n2)} e o resto da divisão é {resto(n1,n2)}\n")
             
             else:
                 print("\nInvalido, você digitou letra,caracter ou letra,caracter + número. ")
@@ -152,6 +152,7 @@ while True:
                 print("\n* Opção Invalida *")
                 opcao = input("\nDeseja encerrar? (S/N): ").upper()[0]
             
+
         if opcao == "S":
                 print("\nObrigado por utilizar.")
                 quit("*Encerrando*")
